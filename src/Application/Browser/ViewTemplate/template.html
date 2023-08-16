@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scrabble</title>
+
+    <style>
+        table td {
+            width: 30px;
+            height: 30px;
+            border: 1px solid lightblue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+{{ winner }}
+
+<h2>Scrabble</h2>
+
+<form action="start.php" method="post">
+    <h3>Start a new game</h3>
+    Amount of players&nbsp;<input type="text" name="playersAmount" autocomplete="off">&nbsp;<input type="submit" value="Start a new game">
+</form>
+
+<br><br>
+
+<form action="make-move.php" method="post">
+    <h3>Make a move</h3>
+    X&nbsp;<input type="text" name="cellXIndex" placeholder="Type a cell X index" autocomplete="off">&nbsp;
+    Y&nbsp;<input type="text" name="cellYIndex" placeholder="Type a cell Y index" autocomplete="off">&nbsp;
+    Player <select name="player">{{ players }}</select>
+    Letter&nbsp;<input type="text" name="letter" placeholder="Type a letter [A-Z]" autocomplete="off">&nbsp;<input type="submit" value="Make a move">
+</form>
+
+<br>
+
+{{ playingField }}
+
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "autoload": {
+    "psr-4": {
+      "Scrabble\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=7.4"
+  }
+}
