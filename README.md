@@ -11,3 +11,10 @@ then run
 ```
 finally open http://localhost:4500/
 and enjoy playing a classic [Scrabble game](https://en.wikipedia.org/wiki/Scrabble).
+
+The list of winning words is:
+* world
+* sun
+* tea
+* science
+* love
